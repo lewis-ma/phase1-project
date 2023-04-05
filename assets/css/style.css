@@ -1,0 +1,83 @@
+/* Set the background color */
+body {
+    background-color: navy;
+  }
+  
+  /* Set the font for the title and subtitle */
+  h1, h2 {
+    font-family: 'Payback', cursive;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Set the background color for the image box */
+  .image-box {
+    background-color: white;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Set the font for the like and view buttons */
+  .like-btn, .view-btn {
+    font-family: 'Nice Sugar', cursive;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Set the style for the like button */
+  .like-btn {
+    background-color: white;
+    color: black;
+  }
+  
+  .like-btn:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Set the style for the view button */
+  .view-btn {
+    background-color: red;
+    color: white;
+  }
+  
+  /* Set the style for the image container */
+  .image-container {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  /* Set the style for the image */
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Set the style for the footer */
+  .footer {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-family: 'Social Media Circled', sans-serif;
+  }
+  
+  /* Set the style for the social media icons */
+  .social-media {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-media i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
