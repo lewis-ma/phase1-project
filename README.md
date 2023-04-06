@@ -1,4 +1,48 @@
 # phase1-project
+Introduction
+
+The Global News website is a platform that enables users to read the latest news articles across various categories such as Business, Culture, Politics, Education, Technology, and Entertainment. The website is designed with a clean, user-friendly interface that provides easy navigation to different sections of the website. It is built using HTML, CSS, and JavaScript and fetches news articles using the inshorts API.
+Features
+
+    Navigation bar - Provides links to different categories of news articles.
+    Search bar - Enables users to search for specific news articles.
+    News section - Displays the latest news articles with images and buttons to like and view.
+    Social media links - Provides links to the website's social media pages.
+    Contact information - Provides contact information for RSVP.
+
+Technologies used
+
+The following technologies were used to build the Global News website:
+
+    HTML - Used to create the structure and content of the website.
+    CSS - Used to style the website and add visual appeal.
+    JavaScript - Used to fetch news articles and implement interactive features.
+    inshorts API - Used to fetch news articles from different categories.
+
+Code Explanation
+
+The Global News website comprises two main files: index.html and style.css. The index.html file defines the structure and content of the website, while the style.css file defines the styles and layout of the website.
+
+The index.html file contains the following sections:
+
+    The head section - Contains the title of the website and links to the Google Fonts API, style.css, and script.js files.
+    The body section - Contains the header, navigation bar, main section, and footer.
+
+The header section contains the website's logo, a search bar, and a tagline. The navigation bar contains links to different categories of news articles. The main section contains a container with news articles, and each news article has an image and buttons to like and view. The footer contains links to the website's social media pages and contact information.
+
+The script.js file contains JavaScript code that fetches news articles from the inshorts API and displays them on the website. It also contains a function that filters news articles based on search terms entered in the search bar.
+Installation
+
+To use the Global News website, simply download or clone the repository and open the index.html file in a web browser. You will need an internet connection to fetch news articles from the inshorts API.
+Contributing
+
+Contributions to the Global News website are welcome. If you would like to contribute, please create a pull request with your changes.
+
+Acknowledgement
+
+The Global News website was built using the inshorts API. Thanks to inshorts for providing the API.
+
+
 MIT License
 
 Copyright (c) 2023 lewis-ma
@@ -20,61 +64,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global News-Get any news </title>
-    <link rel="stylesheet" href="./asset/css/stylesheet.css">
-</head>
-<body>
-    <h1>Global News</h1>
-    <h2>Get any News in the world</h2>
-        <label for="search">Search: </label>
-        <input type="text" id="search">
-        <button id="search-btn">Go</button>
-        <nav>
-            <ul>
-                <li><button id="business-btn">Business</button></li>
-                <li><button id="cultural-btn">Cultural</button></li>
-                <li><button id="politics-btn">Politics</button></li>
-                <li><button id="education-btn">Education</button></li>
-                <li><button id="technology-btn">Technology</button></li>
-                <li><button id="entertainment-btn">Entertainment</button></li>
-            </ul>
-        </nav>
-        <div id="news-container">
-            <img src="/images/news1.jpg" alt="News 1">
-            <img src="/images/news2.jpg" alt="News 2">
-            <img src="/images/news3.jpg" alt="News 3">
-            <img src="/images/news4.jpg" alt="News 4">
-            <img src="/images/news5.jpg" alt="News 5">
-            <img src="/images/news6.jpg" alt="News 6">
-        </div>
-        <script src="globalnews.js"></script>
-
-    <main>
-        <footer>
-            <script scr="./assets/css/styles.css/>
-            
-        </footer>
-    </main>
-
-</body>
-</html>

@@ -1,71 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global News-Get any news </title>
-    <link rel="stylesheet" href="./asset/css/stylesheet.css">
+	<title>Global News</title>
+	<link href="https://fonts.googleapis.com/css2?family=Payback&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Social+Media+Circled&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-  <h1>Global News</h1>
-  <h2>Get news here</h2>
-
-  <form>
-    <label for="search">Search:</label>
-    <input type="text" id="search" name="search">
-    <button type="submit">Go</button>
-  </form>
-
-  <nav>
-    <ul>
-      <li><a href="#">Business</a></li>
-      <li><a href="#">Culture</a></li>
-      <li><a href="#">Politics</a></li>
-      <li><a href="#">Education</a></li>
-      <li><a href="#">Technology</a></li>
-      <li><a href="#">Entertainment</a></li>
-    </ul>
-  </nav>
-
-  <img src="/images/news1.jpg" alt="News 1">
-  <button>Like</button>
-  <button>View</button>
-
-  <img src="/images/news2.jpg" alt="News 2">
-  <button>Like</button>
-  <button>View</button>
-
-  <img src="/images/news3.jpg" alt="News 3">
-  <button>Like</button>
-  <button>View</button>
-
-  <img src="/images/news4.jpg" alt="News 4">
-  <button>Like</button>
-  <button>View</button>
-
-  <img src="/images/news5.jpg" alt="News 5">
-  <button>Like</button>
-  <button>View</button>
-
-  <img src="/images/news6.jpg" alt="News 6">
-  <button>Like</button>
-  <button>View</button>
-
-  <footer>
-    <div>
-      <h3>Social Media</h3>
-      <ul>
-        <li><a href="#"><img src="instagram.png" alt="Instagram">L.Leakey</a></li>
-        <li><a href="#"><img src="facebook.png" alt="Facebook">L.Leakey</a></li>
-        <li><a href="#"><img src="twitter.png" alt="Twitter">L.Leakey</a></li>
-      </ul>
-    </div>
-    <div>
-      <h3>RSVP</h3>
-      <p>Contact</p>
-      <p>Email</p>
-    </div>
-  </footer>
+	<header>
+		<h1>Global News</h1>
+		<h2>Get News Here</h2>
+		<div class="search-container">
+			<input type="text" placeholder="Search">
+			<button class="search-button">Search</button>
+		</div>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">Business</a></li>
+			<li><a href="#">Culture</a></li>
+			<li><a href="#">Politics</a></li>
+			<li><a href="#">Education</a></li>
+			<li><a href="#">Technology</a></li>
+			<li><a href="#">Entertainment</a></li>
+		</ul>
+	</nav>
+	<main>
+		<div class="image-container">
+			<div class="image-box">
+				<img src="/images/news1.jpg" alt="News 1">
+				<div class="buttons">
+					<button class="like-button">Like</button>
+					<button class="view-button">View</button>
+				</div>
+			</div>
+			<div class="image-box">
+				<img src="/images/news2.jpg" alt="News 2">
+				<div class="buttons">
+					<button class="like-button">Like</button>
+					<button class="view-button">View</button>
+				</div>
+			</div>
+			<div class="image-box">
+				<img src="/images/news3.jpg" alt="News 3">
+				<div class="buttons">
+					<button class="like-button">Like</button>
+					<button class="view-button">View</button>
+				</div>
+			</div>
+			<div class="image-box">
+				<img src="/images/news4.jpg" alt="News 4">
+				<div class="buttons">
+					<button class="like-button">Like</button>
+					<button class="view-button">View</button>
+				</div>
+			</div>
+			<div class="image-box">
+				<img src="/images/news5.jpg" alt="News 5">
+				<div class="buttons">
+					<button class="like-button">Like</button>
+					<button class="view-button">View</button>
+				</div>
+			</div>
+			<div class="image-box">
+				<img src="/images/news6.jpg" alt="News 6">
+				<div class="buttons">
+					<button class="like-button">Like</button>
+					<button class="view-button">View</button>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="social-media">
+			<h3>Social Media</h3>
+			<ul>
+				<li><a href="#"><i class="fa fa-instagram"></i> L. Leakey</a></li>
+				<li><a href="#"><i class="fa fa-facebook"></i> L. Leakey</a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i> L. Leakey</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+			<h3>RSVP</h3>
+			<ul>
+				<li><a href="#"><i class="fa fa-contact"></i>0701010101</a></li>
+				<li><a href="#"><i class="fa fa-gmail"></i>lewisky28@gmail.com</a></li>
+				
+            </ul>
+        </div>
+    </footer>
 </body>
-</html>
+</html>    

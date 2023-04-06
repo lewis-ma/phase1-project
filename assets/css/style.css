@@ -1,83 +1,132 @@
-/* Set the background color */
+/* set background color */
 body {
     background-color: navy;
   }
   
-  /* Set the font for the title and subtitle */
+  /* style title and subtitle */
   h1, h2 {
-    font-family: 'Payback', cursive;
+    font-family: 'Payback', sans-serif;
     text-align: center;
+    color: white;
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  /* style search button */
+  button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: navy;
+  }
+  
+  /* style navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: navy;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .navbar a:hover {
+    background-color: navy;
     color: white;
   }
   
-  /* Set the background color for the image box */
-  .image-box {
-    background-color: white;
-    padding: 10px;
-    margin: 0 auto;
+  /* style image container */
+  .image-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    background-color: red;
   }
   
-  /* Set the font for the like and view buttons */
-  .like-btn, .view-btn {
-    font-family: 'Nice Sugar', cursive;
-    font-size: 16px;
+  /* style individual image */
+  .image-container img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  /* style like and view buttons */
+  .image-container button {
+    display: block;
+    margin: 0 auto;
     padding: 5px 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
     border: none;
-    cursor: pointer;
+    color: white;
+    font-family: 'Nice Sugar', cursive;
   }
   
-  /* Set the style for the like button */
   .like-btn {
     background-color: white;
-    color: black;
+    color: navy;
   }
   
-  .like-btn:hover {
-    background-color: black;
-    color: white;
-  }
-  
-  /* Set the style for the view button */
   .view-btn {
     background-color: red;
-    color: white;
   }
   
-  /* Set the style for the image container */
-  .image-container {
-    width: calc(33.33% - 10px);
-    margin-bottom: 20px;
-  }
-  
-  /* Set the style for the image */
-  .image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  /* Set the style for the footer */
-  .footer {
-    background-color: red;
+  /* style footer */
+  footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
     padding: 10px;
-    color: white;
-    font-family: 'Social Media Circled', sans-serif;
+    margin-top: 10px;
+    border-radius: 5px;
   }
   
-  /* Set the style for the social media icons */
   .social-media {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
   
-  .social-media i {
-    font-size: 24px;
-    margin-right: 10px;
+  .social-media a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 5px;
+  }
+  
+  .social-media a:hover {
+    background-color: navy;
+    color: white;
+  }
+  
+  .contact {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
   }
   

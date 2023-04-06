@@ -1,33 +1,53 @@
 const requestOptions = {
-    method: 'GET',
-    redirect: 'follow'
-  };
-  
-  fetch("https://inshorts.deta.dev/news?category=science", requestOptions)
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
-    
-let searchButton = document.querySelector("#search-btn");
-let searchBar = document.querySelector("#search");
-let familyButton = document.querySelector("#family-btn");
-let businessButton = document.querySelector("#business-btn");
-let technologyButton = document.querySelector("#technology-btn");
-let newsContainer = document.querySelector("#news-container");
+  method: 'GET',
+  redirect: 'follow'
+};
 
-searchButton.addEventListener("click", function() {
-  let searchTerm = searchBar.value;
-  // Perform search here
-});
+fetch("https://inshorts.deta.dev/news?category=all", requestOptions)
+  .then(response => response.json())
+  .then(data => {
+    const articles = data.data;
+    const articleContainer = document.querySelector('.article-container');
 
-familyButton.addEventListener("click", function() {
-  // Load family news articles here
-});
+    articles.forEach(article => {
+      const articleDiv = document.createElement('div');
+      articleDiv.classList.add('article');
 
-businessButton.addEventListener("click", function() {
-  // Load business news articles here
-});
+      const articleImage = document.createElement('img');
+      articleImage.src = article.image_url;
+      articleImage.alt = article.title;
+      articleImage.classList.add('article-image');
+      articleDiv.appendChild(articleImage);
 
-technologyButton.addEventListener("click", function() {
-  // Load technology news articles here
-});
+      const articleTitle = document.createElement('h3');
+      articleTitle.textContent = article.title;
+      articleTitle.classList.add('article-title');
+      articleDiv.appendChild(articleTitle);
+
+      const articleSummary = document.createElement('p');
+      articleSummary.textContent = article.summary;
+      articleSummary.classList.add('article-summary');
+      articleDiv.appendChild(articleSummary);
+
+      const articleLikes = document.createElement('button');
+      articleLikes.textContent = `Like (${article.likes})`;
+      articleLikes.classList.add('article-likes');
+      articleLikes.addEventListener('click', () => {
+        article.likes++;
+        articleLikes.textContent = `Like (${article.likes})`;
+      });
+      articleDiv.appendChild(articleLikes);
+
+      const articleViews = document.createElement('button');
+      articleViews.textContent = `View (${article.views})`;
+      articleViews.classList.add('article-views');
+      articleViews.addEventListener('click', () => {
+        article.views++;
+        articleViews.textContent = `View (${article.views})`;
+      });
+      articleDiv.appendChild(articleViews);
+
+      articleContainer.appendChild(articleDiv);
+    });
+  })
+  .catch(error => console.log('error', error));
