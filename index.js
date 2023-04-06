@@ -1,7 +1,6 @@
 
 const requestOptions = {
-  method: "GET",
-  redirect: "follow",
+  method: "GET",redirect: "follow",
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -35,8 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
         viewButton.classList.add("view-button");
         viewButton.textContent = "View";
         viewButton.addEventListener("click", () => {
-          console.log("CLicked");
-          //window.open(article.url, "_blank");
+          console.log("has been viewed");
+         // window.open(article.url, "_blank");
         });
         // const searchButton = document.createElement("button");
         // searchButton.classList.add("search-button");
@@ -126,3 +125,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "<p>Unable to load news articles. Please try again later.</p>";
     });
 });
+
+
+
